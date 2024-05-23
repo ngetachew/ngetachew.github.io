@@ -2,6 +2,7 @@
 layout: page
 ---
 
+![Nathaniel Getachew](grad_sign_photo.jpg){: .center }
 
 I'm a first-year PhD student in Computer Science at Purdue University. My research focuses on Natural Language Processing (NLP), with a particular interest in fake news classification.
 
