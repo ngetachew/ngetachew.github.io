@@ -10,5 +10,8 @@ I'm tyring to figure out ways of using LLMs and the internet for fake news detec
 
 ### Initial 
 
-Test
+Using the LIAR dataset, I tried to input potentially fake claims into ChatGPT and asked it to come up with a search query that would help figure out if it was fake or not. The plan was to actually search the internet(through Google) for answers to these questions. Unfortunately, since there are 12,000 examples in the LIAR dataset, I was unable to do this for all the examples, in fact I was only able to do it for a small portion of them. However, feeding these question responses to an untrained BERT model increased its zero shot accuracy by a noticable amount. Doing this with an already fine-tuned BERT model, however, decreases its accuracy.
 
+Web scraping the search results presented a significant challenge as well, since the websites that the search results came up with varied a lot. I ended up having to implement a retry loop, where if my web scraping code failed on one website, it would iterate through the top results until it was able to parse something. Even then, I would dump the whole body into the input of BERT. There were a few examples that exceeded the max input size for the models, so I used GPT to summarize the inputs on this small set. Overall, this piepline is not sustainable.
+
+After tinkering aroud with the data some more, I'm going to explore using a pre-defined set of articles/ web pages in order to constrain this problem a bit. I'll look at statements from the LIAR dataset that are based on the subject of healthcare, and define some websites/news sources that I can easily scrape from. With these sources defined, I will let GPT decided which source to pull from, then query it, and then use the results in order to support classification.
