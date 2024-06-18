@@ -6,18 +6,45 @@ permalink: /fakenewsllm
 
 # Fake News Detections Using LLMs
 
-I'm tyring to figure out ways of using LLMs and the internet for fake news detection. Below I will document my progress
 
-### Initial 
+## Overview
 
-Using the LIAR dataset, I tried to input potentially fake claims into ChatGPT and asked it to come up with a search query that would help figure out if it was fake or not. The plan was to actually search the internet(through Google) for answers to these questions. Unfortunately, since there are 12,000 examples in the LIAR dataset, I was unable to do this for all the examples, in fact I was only able to do it for a small portion of them. However, feeding these question responses to an untrained BERT model increased its zero shot accuracy by a noticable amount. Doing this with an already fine-tuned BERT model, however, decreases its accuracy.
+The goal of this research is to explore the use of Large Language Models (LLMs) to enhance the ability of smaller language models to detect of fake news. The primary dataset under consideration is the LIAR dataset, which offers metadata on each claim, facilitating the training of models on specific domains such as healthcare and politics.
 
-Web scraping the search results presented a significant challenge as well, since the websites that the search results came up with varied a lot. I ended up having to implement a retry loop, where if my web scraping code failed on one website, it would iterate through the top results until it was able to parse something. Even then, I would dump the whole body into the input of BERT. There were a few examples that exceeded the max input size for the models, so I used GPT to summarize the inputs on this small set. Overall, this piepline is not sustainable.
+## Methodology
 
-After tinkering aroud with the data some more, I'm going to explore using a pre-defined set of articles/ web pages in order to constrain this problem a bit. I'll look at statements from the LIAR dataset that are based on the subject of healthcare, and define some websites/news sources that I can easily scrape from. With these sources defined, I will let GPT decided which source to pull from, then query it, and then use the results in order to support classification.
+### Initial Concept
 
+The original idea is to use LLMs to reason over supporting documents and determine what information is needed to determine if a claim is true. For example, if one saw a claim online saying "The Pope was born in 1844!", one would verify this by looking up the Pope's age, and seeing that he's 87. I'm modeling my idea on this thought process.  The process involves:
 
-### 5/28
+1. **Identifying Relevant Documents:** Articles are sourced from the internet.
+2. **Generating Search Queries:** An LLM (e.g., GPT-3.5 or GPT-4) is employed to formulate search queries aimed at finding evidence supporting or refuting the claim.
 
-I'm looking into more papers where authors connect language models to knowledge bases or the internet. I found an article that scrapes the web using Bing API and finds relevant words to each potentiall fake claim using word similarity. I haven't been able to find the techniques they use to actually clean the web results. Part of me thinks that if I just obtained an LLM representation of a webpage by passing it into an LLM like BERT, then the attention weights for the HTML text would likely be similar across all articles, and a model would be able to learn this and not pay attention to it. That way, I wouldn't have to do any preprocessing at all.
+    **Example:**
+    - **Claim:** "We have fewer Americans working now than in the 70s."
+    - **Search Query:** "American employment rate compared to the 70s"
+
+### Constraining Sources
+
+Given the vastness of the internet, the search results are constrained to a set of unbiased news sites recommended by Allsides.com, including BBC, Reuters, APNews, and The Hill.
+
+**Example:**
+- **Claim:** "We have fewer Americans working now than in the 70s."
+- **Search Query:** "American employment rate compared to the 70s The Hill"
+
+### Extracting Relevant Text
+
+After parsing the HTML of the articles, the supporting or opposing text might only constitute a sentence or two. To avoid exceeding the maximum token limits of LLMs and to improve efficiency, a 4 span of text with the closest cosine similarity to the claim is extracted. This extracted text is then fed into a smaller language model for classification.
+
+### Prediction
+
+Finally, the evidence and claim are fed to a smaller language model for prediction.
+
+### Current Challenges
+
+There are many things I'm working to refine in this process, including the use of knowledge distilled models from proprietary LLMs, alternate text extraction metrics, and ways of escaping API rate limits.
+  
+
+---
+
 
