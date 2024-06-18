@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Fake News Detection"
-permalink: /URL-PATH
+permalink: /fakenewsllm
 ---
 
 # Fake News Detections Using LLMs
