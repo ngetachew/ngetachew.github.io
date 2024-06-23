@@ -43,6 +43,8 @@ Finally, the evidence and claim are fed to a smaller language model for predicti
 ### Current Challenges
 
 There are many things I'm working to refine in this process, including the use of knowledge distilled models from proprietary LLMs, alternate text extraction metrics, and ways of escaping API rate limits.
+
+The LIAR dataset has about 12,000 examples across the train, test, and validation splits. Doing a search for all of these would cost me $300 using the Bing API. I was able to use the free tier to find internet evidence for the validation set, but that's it so far.
   
 
 ---
