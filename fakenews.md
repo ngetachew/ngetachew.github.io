@@ -23,6 +23,7 @@ The original idea is to use LLMs to reason over supporting documents and determi
     **Example:**
     - **Claim:** "We have fewer Americans working now than in the 70s."
     - **Search Query:** "American employment rate compared to the 70s"
+3. **Prediction with Evidence:** The search query yields internet results that provide background information to help the model determine if the claim is false or not. The claim is concatenated to the information and fed to the model for prediction.
 
 ### Constraining Sources
 
@@ -36,9 +37,6 @@ Given the vastness of the internet a search query could bring up results from an
 
 After parsing the HTML of the articles, the supporting or opposing text might only constitute a sentence or two. To avoid exceeding the maximum token limits of LLMs and to improve efficiency, a 40 word span of text with the closest cosine similarity to the claim is extracted. This extracted text is then fed into a smaller language model for classification.
 
-### Prediction
-
-Finally, the evidence and claim are fed to a smaller language model for prediction.
 
 ### Current Challenges
 
