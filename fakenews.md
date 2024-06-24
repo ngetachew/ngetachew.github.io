@@ -26,7 +26,7 @@ The original idea is to use LLMs to reason over supporting documents and determi
 
 ### Constraining Sources
 
-Given the vastness of the internet, the search results are constrained to a set of unbiased news sites recommended by Allsides.com, including BBC, Reuters, APNews, and The Hill.
+Given the vastness of the internet a search query could bring up results from anywhere, maybe even the source of the potentially fake claim itself! This is why under this framework, I've constrained the results to a set of unbiased news sites recommended by Allsides.com, including BBC, Reuters, APNews, and The Hill. These sources are completely adaptable.
 
 **Example:**
 - **Claim:** "We have fewer Americans working now than in the 70s."
@@ -34,7 +34,7 @@ Given the vastness of the internet, the search results are constrained to a set 
 
 ### Extracting Relevant Text
 
-After parsing the HTML of the articles, the supporting or opposing text might only constitute a sentence or two. To avoid exceeding the maximum token limits of LLMs and to improve efficiency, a 4 span of text with the closest cosine similarity to the claim is extracted. This extracted text is then fed into a smaller language model for classification.
+After parsing the HTML of the articles, the supporting or opposing text might only constitute a sentence or two. To avoid exceeding the maximum token limits of LLMs and to improve efficiency, a 40 word span of text with the closest cosine similarity to the claim is extracted. This extracted text is then fed into a smaller language model for classification.
 
 ### Prediction
 
