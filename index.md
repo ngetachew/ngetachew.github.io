@@ -14,13 +14,16 @@ I'm a first-year PhD student in Computer Science at Purdue University. My resear
 
 ## Research Interests
 - Natural Language Processing (NLP)
+- Theory of Mind in Large Language Models
+- Mechanistic Interpretability
 - Fake News Classification
-- Machine Learning
-- Deep Learning
+
 
 ## Current Projects
 ### Fake News Classification
-I am currently working on leveraging Large Language Models to help with fake news detection. Specifically, I'd like to use the internet to inform predictions. Large Language Models have great internal knowledge and are good for synthesizing internet results that contain a lot of information, but they still have their pitfalls. I will soon be adding blog posts to this website to document my progress
+I am currently working on leveraging Large Language Models to help with fake news detection. Specifically, I'd like to use the internet to inform predictions. Large Language Models have great internal knowledge and are good for synthesizing internet results that contain a lot of information, but they still have their pitfalls. I created an evidence based classification model and submitted it to the AVeriTeC shared task, a fake news classification dataset published for the [FEVER](fever.ai) workshop. Unfortunately, since I completed this project myself without support, my limited compute and disk space hampered my ability to use more powerful models, but I came up with a theoretical framework I'd like to explore more in the future.
+
+
 
 
 ## Contact
