@@ -2,7 +2,12 @@
 layout: page
 ---
 
-![Nathaniel Getachew](grad_sign_photo.jpg){: .center }
+<p align="center"> 
+  <img align="center"  src=grad_sign_photo.jpg>
+</p>
+
+
+
 
 I'm a first-year PhD student in Computer Science at Purdue University. My research focuses on Natural Language Processing (NLP), with a particular interest in large language models and understand social phenomena.
 
