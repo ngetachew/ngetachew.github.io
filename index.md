@@ -6,7 +6,7 @@ layout: page
 
 
 
-I'm a first-year PhD student in Computer Science at Purdue University. My research focuses on Natural Language Processing (NLP), with a particular interest in large language models and understand social phenomena.
+I'm a first-year PhD student in Computer Science at Purdue University. My research focuses on Natural Language Processing (NLP), with a particular interest in large language models and understanding social phenomena.
 
 ## Education
 - **PhD in Computer Science** (Ongoing)
