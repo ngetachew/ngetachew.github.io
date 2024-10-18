@@ -2,10 +2,7 @@
 layout: page
 ---
 
-<p align="center"> 
-  <img align="center"  src=grad_sign_photo.jpg>
-</p>
-
+![Grad picture](grad_sign_photo.jpg)
 
 
 
