@@ -3,7 +3,7 @@ layout: page
 ---
 
 <p align="center">
-  <img src="https://github.com/ngetachew/ngetachew.github.io/blob/master/grad_sign_photo.jpg?raw=true" alt="Picture of me"/>
+  <img src="https://github.com/ngetachew/ngetachew.github.io/blob/master/Photo.jpg?raw=true" alt="Picture of me"/>
 </p>
 
 
