@@ -2,9 +2,8 @@
 layout: page
 ---
 
-<p align="center">
   <img src="https://github.com/ngetachew/ngetachew.github.io/blob/master/Photo.jpg?raw=true" style="display:block;margin-left:auto;margin-right:auto;" height=30% width=30%/>
-</p>
+
 
 
 
