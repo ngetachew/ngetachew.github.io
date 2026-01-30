@@ -2,32 +2,26 @@
 layout: page
 ---
 
-![Grad picture](grad_sign_photo.jpg)
+<p align="center">
+  <img src="https://github.com/ngetachew/ngetachew.github.io/blob/master/grad_sign_photo.jpg?raw=true" alt="Picture of me"/>
+</p>
 
 
 
-I'm a first-year PhD student in Computer Science at Purdue University. My research focuses on Natural Language Processing (NLP), with a particular interest in large language models and understanding social phenomena.
+I'm a third-year PhD student in Computer Science at Purdue University. I'm interested in projects broadly related to the world modeling abilities of LLMs. This is something you typically see studied in game-like environments, but I'd like to see what happens when you shift this paradigm to other domains. I intend to explore this in social reasoning and document understanding problems. Read more about my thoughts for future research [here](https://docs.google.com/document/d/15tK-3hWZ2lWw1V8QhgLj3hCDctYWcn2isyNlBGyvdRg/edit?tab=t.0#heading=h.rs0shqmwd2am). 
 
 ## Education
-- **PhD in Computer Science** (Ongoing)
+- **PhD in Computer Science** (2023 - Current)
   - Purdue University
 - **B.A in Comptuter Science**, Mathematics
   - Pomona College, class of 2023
 
-## Research Interests
-- Natural Language Processing (NLP)
-- Theory of Mind in Large Language Models
-- Mechanistic Interpretability
-- Fake News Classification
+## Publications:
 
-
-## Current Projects
-### Fake News Classification
-I am currently working on leveraging Large Language Models to help with fake news detection. Specifically, I'd like to use the internet to inform predictions. Large Language Models have great internal knowledge and are good for synthesizing internet results that contain a lot of information, but they still have their pitfalls. I created an evidence based classification model and submitted it to the AVeriTeC shared task, a fake news classification dataset published for the [FEVER](fever.ai) workshop. Unfortunately, since I completed this project myself without support, my limited compute and disk space hampered my ability to use more powerful models, but I came up with a theoretical framework I'd like to explore more in the future.
-
-### Theory of Mind in LLMs
-
-I'm working with Professor Saparov at Purdue to evaluate and potentially improve Theory of Mind(ToM) in large language models. ToM is one's ability to understand the perspective and mental state of another/group of people. Understanding the limits of ToM in LLMs is not only a step towards more interpretability, but also plays an important part in knowing what kinds of critical tasks LLMs can be trusted with, and how they represent humans internally.
+- [Language Models Might Not Understand You: Evaluating Theory of Mind via Story Prompting](https://arxiv.org/pdf/2506.19089)
+Nathaniel Getachew, Abulhair Saparov
+*Social Simulation with LLMs Workshop @ COLM 2025*
+[Spotlight Award](https://sites.google.com/view/social-sims-with-llms), [Oral Presentation](https://www.youtube.com/watch?v=W4O6pMfTYOg)
 
 
 ## Contact
@@ -37,6 +31,6 @@ I'm working with Professor Saparov at Purdue to evaluate and potentially improve
 
 ## Hobbies and Interests
 
-Outside of my academic pursuits, I enjoy running and playing guitar. I was formerly on the Pomona Pitzer Cross Country and Track teams, and I'm currently finishing up my NCAA career on the Purdue Track Team. Chirp Chirp, and Boiler Up!
+Outside of my academic pursuits, I enjoy running and playing guitar. I ran for the Pomona Pitzer and Purdue Track & Cross Country Teams. Chirp Chirp, and Boiler Up!
 
 Feel free to reach out if you want to discuss research, collaboration, or just have a chat!
