@@ -19,9 +19,11 @@ I'm a third-year PhD student in Computer Science at Purdue University. I'm inter
 ## Publications:
 
 - [Language Models Might Not Understand You: Evaluating Theory of Mind via Story Prompting](https://arxiv.org/pdf/2506.19089)
-Nathaniel Getachew, Abulhair Saparov
-*Social Simulation with LLMs Workshop @ COLM 2025*
-[Spotlight Award](https://sites.google.com/view/social-sims-with-llms), [Oral Presentation](https://www.youtube.com/watch?v=W4O6pMfTYOg)
+
+  Nathaniel Getachew, Abulhair Saparov
+
+  *Social Simulation with LLMs Workshop @ COLM 2025*
+  [Spotlight Award](https://sites.google.com/view/social-sims-with-llms), [Oral Presentation](https://www.youtube.com/watch?v=W4O6pMfTYOg)
 
 
 ## Contact
