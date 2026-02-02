@@ -2,7 +2,7 @@
 layout: page
 ---
 
-![Pic of me](Photo.jpg)
+![Pic of me](prof.png)
 
 
 
