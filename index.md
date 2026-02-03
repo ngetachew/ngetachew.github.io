@@ -20,12 +20,12 @@ I'm a third-year PhD student in Computer Science at Purdue University advised by
 
   Nathaniel Getachew, Abulhair Saparov
 
-  *Social Simulation with LLMs Workshop @ COLM 2025*
-  [Spotlight Award](https://sites.google.com/view/social-sims-with-llms), [Oral Presentation](https://www.youtube.com/watch?v=W4O6pMfTYOg)
+  *Social Simulation with LLMs Workshop @ COLM 2025* |
+  ([Spotlight Award](https://sites.google.com/view/social-sims-with-llms), [Oral Presentation](https://www.youtube.com/watch?v=W4O6pMfTYOg))
 
 - *Undergraduate Thesis:* [Latent Dirichlet Allocation: Topic Modeling and Automatically Ranking Topics](https://github.com/ngetachew/Getachew-Thesis-2023/blob/main/Getachew_Thesis.pdf)
 
-  Advised by Dr. Gabrial Chandler
+  Advised by Dr. Gabriel Chandler
 
 
 ## Contact
