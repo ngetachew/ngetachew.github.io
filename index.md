@@ -30,7 +30,7 @@ I'm a third-year PhD student in Computer Science at Purdue University advised by
 ## Other Writing
 
 - [My thoughts on why I'd like to explore world modeling in LLMs](https://docs.google.com/document/d/15tK-3hWZ2lWw1V8QhgLj3hCDctYWcn2isyNlBGyvdRg/edit?tab=t.0#heading=h.rs0shqmwd2am)
-- [Results from a project where I explored harmful prompt suppression in Masked Diffusion LMs](https://github.com/ngetachew/ngetachew.github.io/blob/master/CS592_project_report_nathaniel.pdf)
+- [Results from a project where I explored harmful prompt suppression in Masked Diffusion LMs](https://raw.githubusercontent.com/ngetachew/Diffusion-Safety/refs/heads/main/diffusion_safety_report.pdf)
 
 
 ## Contact
